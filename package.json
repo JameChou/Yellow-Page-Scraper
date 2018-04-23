@@ -11,21 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "fetch-data": "casperjs scraper.js",
-    "json2xlsx": "node json2xlsx.js",
+    "json2csv": "node json2csv.js",
     "fetch-data-proxy": "casperjs --proxy=127.0.0.1:1087 scraper.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JameChou/Yellow-Page-Email-Scraper.git"
-  },
-  "keywords": [
-    "yellow page",
-    "scraper"
-  ],
-  "author": "James",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JameChou/Yellow-Page-Email-Scraper/issues"
-  },
-  "homepage": "https://github.com/JameChou/Yellow-Page-Email-Scraper#readme"
+  }
 }
