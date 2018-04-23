@@ -1,5 +1,6 @@
 // casperJS
 var casper = require('casper').create();
+var fs = require('fs');
 
 // build variables
 var build = {
@@ -10,7 +11,8 @@ var build = {
     currentLocation: 0,
     proceed: true,
     links: [],
-    email: undefined
+    email: undefined,
+    aoo: []
 };
 
 // areas and keyword
@@ -22,7 +24,7 @@ var host = {
         '/michigan'
     ],
     // business keyword
-    keyword: '/fishing',
+    keyword: '/dumbbell',
     // creates complete link
     search: function () {
         return host.url + host.area[build.currentLocation] + host.keyword;
@@ -72,8 +74,10 @@ function scrape(page) {
                     // get the title of the page
                     var title = this.getTitle();
                     // print business and email
-                    this.echo('\nBUSINESS: ' + title.substr(0, title.length - 9));
+                    var address = title.substr(0, title.length - 9);
+                    this.echo('\nBUSINESS: ' + address);
                     this.echo('EMAIL: ' + build.email);
+                    build.aoo.push({address: address, email: build.email});
                     // push email to array
                     build.emails.push(build.email);
                 }
@@ -106,6 +110,8 @@ function scrape(page) {
                 } else {
                     // else complete process
                     this.echo('COMPLETE: All areas completed');
+                    // write data to local json file
+                    fs.write('data.json', JSON.stringify(build.aoo), 'w');
                     // then kill app
                     this.exit();
                 }
@@ -121,7 +127,7 @@ scrape(host.search());
 // final exit
 casper.run(function () {
     // shows all emails scraped
-    this.echo('\nSCAPED: ' + emails.length);
-    this.echo('DUMP: ' + emails.join(', ')).exit();
+    this.echo('\nSCAPED: ' + build.emails.length);
+    this.echo('DUMP: ' + build.emails.join(', ')).exit();
     this.exit();
 });
