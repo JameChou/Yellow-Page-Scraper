@@ -3,12 +3,9 @@ var fs = require('fs');
 
 // build variables
 var build = {
-    emails: [],
     currentPage: 1,
     currentLocation: 0,
     proceed: true,
-    links: [],
-    email: undefined,
     aoo: []
 };
 
@@ -29,22 +26,33 @@ var host = {
 
 // data methods
 var get = {
-    // gets links to page of businesses
     links: function () {
-        // search for business links
-        var query = document.querySelectorAll('div.info h2.n a.business-name');
-        return Array.prototype.map.call(query, function (e) {
-            return e.getAttribute('href');
-        });
+      console.log(123);
     },
-    // gets emails from a current page
-    email: function () {
-        // select email element
-        var results = document.getElementsByClassName('email-business')[0];
-        results = results.getAttribute('href');
-        results = results.slice(7);
+    processData: function () {
+      console.log('haha');
+      var data = {};
+      var cards = document.getElementsByClassName('v-card');
+      for (var card in cards) {
+        // get name
+        var name = card.querySelectorAll('[itemprop="name"]');
+        if (name == null || name == undefined || name.trim() == '') continue;
+        data.name = name;
 
-        return results;
+        // get official website if exists
+        var websites = card.getElementsByClassName("track-visit-webiste");
+        if (websites == null || websites == undefined || websites.length == 0) data.website = '';
+        else data.website = websites[0].getAttribute('href');
+
+        // get address
+        var addresses = card.querySelectorAll('p.adr span');
+        var address = '';
+        for (var a in addresses) address += a.text();
+        address = address.replaceAll('&nbsp;', ' ');
+        data.address = address;
+      }
+
+      return data;
     }
 };
 
@@ -52,24 +60,9 @@ var get = {
 function scrape(page) {
     casper.start(page, function () {
         this.echo('\nSCAPING: ' + page);
-        build.links = this.evaluate(get.links);
-        for (var i in build.links) {
-            casper.thenOpen(host.url + build.links[i], function () {
-                build.email = this.evaluate(get.email);
-                if (build.email !== null) {
-                    var title = this.getTitle();
-                    var address = title.substr(0, title.length - 9);
-                    this.echo('\nBUSINESS: ' + address);
-                    this.echo('EMAIL: ' + build.email);
-                    build.aoo.push({address: address, email: build.email});
-                    build.emails.push(build.email);
-                }
-            });
-        }
+
         // opens main page again
         casper.thenOpen(page, function () {
-            this.echo('\nSCAPED: ' + build.emails.length);
-            this.echo('DUMP: ' + build.emails.join(', '));
             if (this.exists('a.next')) {
                 this.echo('\nCONTINUE: Next button found');
                 build.currentPage = build.currentPage + 1;
@@ -83,7 +76,7 @@ function scrape(page) {
                 } else {
                     // complete and write data to json file
                     this.echo('COMPLETE: All areas completed');
-                    fs.write('example.json', JSON.stringify(build.aoo), 'w');
+                    fs.write('example.json', JSON.stringify(build.aoo, null, 2), 'w');
                     this.exit();
                 }
 
@@ -97,7 +90,5 @@ scrape(host.search());
 
 // final exit
 casper.run(function () {
-    this.echo('\nSCAPED: ' + build.emails.length);
-    this.echo('DUMP: ' + build.emails.join(', ')).exit();
     this.exit();
 });
