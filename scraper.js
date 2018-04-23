@@ -5,8 +5,10 @@ var fs = require('fs');
 var build = {
     currentPage: 1,
     currentLocation: 0,
+    links: [],
     proceed: true,
-    aoo: []
+    aoo: [],
+    cardInfo: null
 };
 
 // areas and keyword
@@ -27,32 +29,45 @@ var host = {
 // data methods
 var get = {
     links: function () {
-      console.log(123);
+      var query = document.querySelectorAll('div.info h2.n a.business-name');
+       return Array.prototype.map.call(query, function (e) {
+           return e.getAttribute('href');
+       });
     },
     processData: function () {
-      console.log('haha');
-      var data = {};
-      var cards = document.getElementsByClassName('v-card');
-      for (var card in cards) {
-        // get name
-        var name = card.querySelectorAll('[itemprop="name"]');
-        if (name == null || name == undefined || name.trim() == '') continue;
-        data.name = name;
-
-        // get official website if exists
-        var websites = card.getElementsByClassName("track-visit-webiste");
-        if (websites == null || websites == undefined || websites.length == 0) data.website = '';
-        else data.website = websites[0].getAttribute('href');
-
-        // get address
-        var addresses = card.querySelectorAll('p.adr span');
-        var address = '';
-        for (var a in addresses) address += a.text();
-        address = address.replaceAll('&nbsp;', ' ');
-        data.address = address;
+      var cardInfo = {};
+      // email
+      var emailDom = document.getElementsByClassName('email-business');
+      if (emailDom != null && emailDom != undefined && emailDom.length > 0) {
+        cardInfo.email = emailDom[0].getAttribute('href').slice(7);
       }
 
-      return data;
+      // name
+      var nameDom = document.querySelectorAll('div.sales-info h1')[0];
+      cardInfo.name = nameDom.innerText;
+
+      // address
+      var addressDoms = document.querySelectorAll('div.contact p.address span');
+      var address = '';
+      for (var i=0; i<addressDoms.length; i++) {
+        address += addressDoms[i].innerText;
+      }
+      address = address.replace('&nbsp;', ' ');
+      cardInfo.address = address;
+
+      // official website
+      var websiteDom = document.querySelectorAll('a.other-links');
+      if (websiteDom != null && websiteDom != undefined && websiteDom.length > 0) {
+        cardInfo.website = websiteDom[0].getAttribute('href');
+      }
+
+      // phone
+      var phoneDom = document.querySelectorAll('div.contact p.phone');
+      if (phoneDom != null && phoneDom != undefined && phoneDom.length > 0) {
+        cardInfo.phone = phoneDom[0].innerText;
+      }
+
+      return cardInfo;
     }
 };
 
@@ -60,6 +75,19 @@ var get = {
 function scrape(page) {
     casper.start(page, function () {
         this.echo('\nSCAPING: ' + page);
+
+        build.links = this.evaluate(get.links);
+          // loop over all those links
+          for (var i in build.links) {
+              casper.thenOpen(host.url + build.links[i], function () {
+                  build.cardInfo = this.evaluate(get.processData);
+                  if (build.cardInfo != null) {
+                    console.log('\nProcess ------>\n');
+                    console.log(JSON.stringify(build.cardInfo, null, 2));
+                    build.aoo.push(build.cardInfo);
+                  }
+              });
+          }
 
         // opens main page again
         casper.thenOpen(page, function () {
