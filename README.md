@@ -1,7 +1,8 @@
 # Yellow Page Email Scraper
 ### About
-Scrap Yellow Pages for emails and return them in a list -
-![Screen shot](http://i.imgur.com/h1yCp0p.png)
+Scrap Yellow Pages for name,email,address,phone number ... and store the information into JSON/CSV file.
+[See example JSON file](./example.json)
+[See example CSV file](./example.csv)
 
 ### Install
 ```bash
