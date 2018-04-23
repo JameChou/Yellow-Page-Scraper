@@ -11,7 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "fetch-data": "casperjs scraper.js",
-    "json2xlsx": "node json2xlsx.js",
+    "json2csv": "node json2csv.js",
     "fetch-data-proxy": "casperjs --proxy=127.0.0.1:1087 scraper.js"
   },
   "repository": {

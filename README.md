@@ -53,7 +53,7 @@ then run by script
 npm run fetch-data-proxy
 ```
 
-### Convert JSON Data to Excel(XLSX)
+### Convert JSON Format Data to CSV Format Data
 ```bash
-npm run json2xlsx
+npm run json2csv
 ```

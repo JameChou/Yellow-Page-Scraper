@@ -111,7 +111,7 @@ function scrape(page) {
                     // else complete process
                     this.echo('COMPLETE: All areas completed');
                     // write data to local json file
-                    fs.write('data.json', JSON.stringify(build.aoo), 'w');
+                    fs.write('example.json', JSON.stringify(build.aoo), 'w');
                     // then kill app
                     this.exit();
                 }
