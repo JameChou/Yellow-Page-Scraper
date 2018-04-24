@@ -1,4 +1,4 @@
-# Yellow Page Email Scraper
+# Yellow Page Scraper
 ### About
 Scrap Yellow Pages for name,email,address,phone number ... and store the information into JSON/CSV file.
 [See example JSON file](./example.json)
