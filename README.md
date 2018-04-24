@@ -1,8 +1,9 @@
 # Yellow Page Scraper
 ### About
 Scrap Yellow Pages for name,email,address,phone number ... and store the information into JSON/CSV file.
-[See example JSON file](./example.json)
-[See example CSV file](./example.csv)
+
+* [See example JSON file](./output/example.json)
+* [See example CSV file](./output/example.csv)
 
 ### Install
 ```bash
