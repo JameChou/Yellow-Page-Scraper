@@ -1,154 +1,154 @@
-New York,New York
-Los Angeles,California
+New-York,New-York
+Los-Angeles,California
 Chicago,Illinois
 Houston,Texas
 Philadelphia,Pennsylvania
 Phoenix,Arizona
-San Antonio,Texas
-San Diego,California
+San-Antonio,Texas
+San-Diego,California
 Detroit,Michigan
-San Jose,California
+San-Jose,California
 Austin,Texas
 Jacksonville,Florida
-San Francisco,California
+San-Francisco,California
 Indianapolis,Indiana
 Columbus,Ohio
-Fort Worth,Texas
-Charlotte,North Carolina
+Fort-Worth,Texas
+Charlotte,North-Carolina
 Seattle,Washington
-El Paso,Texas
+El-Paso,Texas
 Dallas,Texas
 Denver,Colorado
-Washington,District of Columbia
+Washington,District-of-Columbia
 Memphis,Tennessee
 Boston,Massachusetts
 Nashville,Tennessee
 Baltimore,Maryland
-Oklahoma City,Oklahoma
+Oklahoma-City,Oklahoma
 Portland,Oregon
-Las Vegas,Nevada
+Las-Vegas,Nevada
 Louisville,Kentucky
 Milwaukee,Wisconsin
-Albuquerque,New Mexico
+Albuquerque,New-Mexico
 Tucson,Arizona
 Fresno,California
 Sacramento,California
-Long Beach,California
-Kansas City,Missouri
+Long-Beach,California
+Kansas-City,Missouri
 Mesa,Arizona
 Atlanta,Georgia
-Virginia Beach,Virginia
+Virginia-Beach,Virginia
 Omaha,Nebraska
-Colorado Springs,Colorado
-Raleigh,North Carolina
+Colorado-Springs,Colorado
+Raleigh,North-Carolina
 Miami,Florida
 Oakland,California
 Minneapolis,Minnesota
 Tulsa,Oklahoma
 Cleveland,Ohio
 Wichita,Kansas
-New Orleans,Louisiana
+New-Orleans,Louisiana
 Arlington,Texas
 Bakersfield,California
 Tampa,Florida
 Aurora,Colorado
 Honolulu,Hawai'i
 Anaheim,California
-Santa Ana,California
-Corpus Christi,Texas
+Santa-Ana,California
+Corpus-Christi,Texas
 Riverside,California
-St. Louis,Missouri
+St.-Louis,Missouri
 Lexington,Kentucky
 Pittsburgh,Pennsylvania
 Stockton,California
 Anchorage,Alaska
 Cincinnati,Ohio
-Saint Paul,Minnesota
-Greensboro,North Carolina
+Saint-Paul,Minnesota
+Greensboro,North-Carolina
 Toledo,Ohio
-Newark,New Jersey
+Newark,New-Jersey
 Plano,Texas
 Henderson,Nevada
 Lincoln,Nebraska
 Orlando,Florida
-Jersey City,New Jersey
-Chula Vista,California
-Buffalo,New York
-Fort Wayne,Indiana
+Jersey-City,New-Jersey
+Chula-Vista,California
+Buffalo,New-York
+Fort-Wayne,Indiana
 Chandler,Arizona
-St. Petersburg,Florida
+St.-Petersburg,Florida
 Laredo,Texas
-Durham,North Carolina
+Durham,North-Carolina
 Irvine,California
 Madison,Wisconsin
 Norfolk,Virginia
 Lubbock,Texas
 Gilbert,Arizona
-Winston–Salem,North Carolina
+Winston–Salem,North-Carolina
 Glendale,Arizona
 Reno,Nevada
 Hialeah,Florida
 Garland,Texas
 Chesapeake,Virginia
 Irving,Texas
-North Las Vegas,Nevada
+North-Las-Vegas,Nevada
 Scottsdale,Arizona
-Baton Rouge,Louisiana
+Baton-Rouge,Louisiana
 Fremont,California
 Richmond,Virginia
 Boise,Idaho
-San Bernardino,California
+San-Bernardino,California
 Birmingham,Alabama
 Spokane,Washington
-Rochester,New York
+Rochester,New-York
 Modesto,California
-Des Moines,Iowa
+Des-Moines,Iowa
 Oxnard,California
 Tacoma,Washington
 Fontana,California
-Fayetteville,North Carolina
-Moreno Valley,California
+Fayetteville,North-Carolina
+Moreno-Valley,California
 Columbus,Georgia
-Huntington Beach,California
-Yonkers,New York
+Huntington-Beach,California
+Yonkers,New-York
 Montgomery,Alabama
 Aurora,Illinois
 Glendale,California
 Shreveport,Louisiana
 Akron,Ohio
-Little Rock,Arkansas
+Little-Rock,Arkansas
 Amarillo,Texas
 Augusta,Georgia
 Mobile,Alabama
-Grand Rapids,Michigan
-Salt Lake City,Utah
+Grand-Rapids,Michigan
+Salt-Lake-City,Utah
 Huntsville,Alabama
 Tallahassee,Florida
-Grand Prairie,Texas
-Overland Park,Kansas
+Grand-Prairie,Texas
+Overland-Park,Kansas
 Knoxville,Tennessee
 Brownsville,Texas
 Worcester,Massachusetts
-Newport News,Virginia
-Santa Clarita,California
-Providence,Rhode Island
-Fort Lauderdale,Florida
-Garden Grove,California
+Newport-News,Virginia
+Santa-Clarita,California
+Providence,Rhode-Island
+Fort-Lauderdale,Florida
+Garden-Grove,California
 Oceanside,California
-Rancho Cucamonga,California
-Santa Rosa,California
-Port St. Lucie,Florida
+Rancho-Cucamonga,California
+Santa-Rosa,California
+Port-St.-Lucie,Florida
 Chattanooga,Tennessee
 Tempe,Arizona
 Jackson,Mississippi
-Cape Coral,Florida
+Cape-Coral,Florida
 Vancouver,Washington
 Ontario,California
-Sioux Falls,South Dakota
+Sioux-Falls,South-Dakota
 Peoria,Arizona
 Springfield,Missouri
-Pembroke Pines,Florida
-Elk Grove,California
+Pembroke-Pines,Florida
+Elk-Grove,California
 Salem,Oregon
 Corona,California
 Lancaster,California
@@ -156,8 +156,8 @@ Eugene,Oregon
 Palmdale,California
 McKinney,Texas
 Salinas,California
-Fort Collins,Colorado
-Cary,North Carolina
+Fort-Collins,Colorado
+Cary,North-Carolina
 Hayward,California
 Springfield,Massachusetts
 Pasadena,Texas
@@ -167,19 +167,19 @@ Alexandria,Virginia
 Escondido,California
 Sunnyvale,California
 Lakewood,Colorado
-Kansas City,Kansas
+Kansas-City,Kansas
 Rockford,Illinois
 Torrance,California
 Hollywood,Florida
 Joliet,Illinois
 Bridgeport,Connecticut
 Clarksville,Tennessee
-Paterson,New Jersey
+Paterson,New-Jersey
 Naperville,Illinois
 Frisco,Texas
 Mesquite,Texas
 Savannah,Georgia
-Syracuse,New York
+Syracuse,New-York
 Dayton,Ohio
 Pasadena,California
 Orange,California
@@ -190,33 +190,33 @@ Hampton,Virginia
 Bellevue,Washington
 Warren,Michigan
 Miramar,Florida
-West Valley City,Utah
+West-Valley-City,Utah
 Olathe,Kansas
-Columbia,South Carolina
-Sterling Heights,Michigan
+Columbia,South-Carolina
+Sterling-Heights,Michigan
 Thornton,Colorado
-New Haven,Connecticut
+New-Haven,Connecticut
 Waco,Texas
-Charleston,South Carolina
-Thousand Oaks,California
+Charleston,South-Carolina
+Thousand-Oaks,California
 Visalia,California
-Cedar Rapids,Iowa
-Elizabeth,New Jersey
+Cedar-Rapids,Iowa
+Elizabeth,New-Jersey
 Roseville,California
 Gainesville,Florida
 Carrollton,Texas
 Stamford,Connecticut
 Denton,Texas
 Midland,Texas
-Coral Springs,Florida
+Coral-Springs,Florida
 Concord,California
 Topeka,Kansas
-Simi Valley,California
+Simi-Valley,California
 Surprise,Arizona
 Lafayette,Louisiana
 Kent,Washington
 Hartford,Connecticut
-Santa Clara,California
+Santa-Clara,California
 Victorville,California
 Abilene,Texas
 Murfreesboro,Tennessee
@@ -226,32 +226,32 @@ Athens,Georgia
 Allentown,Pennsylvania
 Berkeley,California
 Norman,Oklahoma
-Ann Arbor,Michigan
+Ann-Arbor,Michigan
 Beaumont,Texas
 Independence,Missouri
 Columbia,Missouri
 Springfield,Illinois
-El Monte,California
-Fargo,North Dakota
+El-Monte,California
+Fargo,North-Dakota
 Peoria,Illinois
 Provo,Utah
 Lansing,Michigan
 Odessa,Texas
 Downey,California
-Wilmington,North Carolina
+Wilmington,North-Carolina
 Arvada,Colorado
-Costa Mesa,California
-Round Rock,Texas
+Costa-Mesa,California
+Round-Rock,Texas
 Carlsbad,California
-Miami Gardens,Florida
+Miami-Gardens,Florida
 Westminster,Colorado
 Inglewood,California
 Rochester,Minnesota
 Fairfield,California
 Elgin,Illinois
-West Jordan,Utah
+West-Jordan,Utah
 Clearwater,Florida
-Manchester,New Hampshire
+Manchester,New-Hampshire
 Lowell,Massachusetts
 Gresham,Oregon
 Cambridge,Massachusetts
@@ -260,39 +260,39 @@ Temecula,California
 Waterbury,Connecticut
 Antioch,California
 Billings,Montana
-High Point,North Carolina
+High-Point,North-Carolina
 Richardson,Texas
 Richmond,California
-West Covina,California
+West-Covina,California
 Pueblo,Colorado
 Murrieta,California
 Centennial,Colorado
 Norwalk,California
-North Charleston,South Carolina
+North-Charleston,South-Carolina
 Everett,Washington
-Pompano Beach,Florida
-Daly City,California
-Palm Bay,Florida
+Pompano-Beach,Florida
+Daly-City,California
+Palm-Bay,Florida
 Burbank,California
-Wichita Falls,Texas
+Wichita-Falls,Texas
 Boulder,Colorado
-Green Bay,Wisconsin
-Broken Arrow,Oklahoma
-West Palm Beach,Florida
-College Station,Texas
+Green-Bay,Wisconsin
+Broken-Arrow,Oklahoma
+West-Palm-Beach,Florida
+College-Station,Texas
 Pearland,Texas
-Santa Maria,California
-El Cajon,California
-San Mateo,California
+Santa-Maria,California
+El-Cajon,California
+San-Mateo,California
 Lewisville,Texas
 Rialto,California
 Davenport,Iowa
 Lakeland,Florida
 Clovis,California
-Edison,New Jersey
-Sandy Springs,Georgia
+Edison,New-Jersey
+Sandy-Springs,Georgia
 Tyler,Texas
-Las Cruces,New Mexico
-South Bend,Indiana
-Farmington Hills,Michigan
+Las-Cruces,New-Mexico
+South-Bend,Indiana
+Farmington-Hills,Michigan
 Erie,Pennsylvania
