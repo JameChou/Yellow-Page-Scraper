@@ -85,6 +85,16 @@ function scrape(page) {
                     console.log('\nProcess ------>\n');
                     console.log(JSON.stringify(build.cardInfo, null, 2));
                     build.aoo.push(build.cardInfo);
+                    if (build.cardInfo.website != null && build.cardInfo.website.length > 0) {
+                      casper.thenOpen(build.cardInfo.website, function () {
+                        this.capture('./capture/' + build.cardInfo.name + '.png', {
+                                top: 0,
+                                left: 0,
+                                width: 1600,
+                                height: 900
+                        });
+                      });
+                    }
                   }
               });
           }
@@ -118,5 +128,6 @@ scrape(host.search());
 
 // final exit
 casper.run(function () {
-    this.exit();
+    console.log("done.");
+    casper.exit();
 });
