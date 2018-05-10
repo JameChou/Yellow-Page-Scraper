@@ -12,6 +12,7 @@
   "scripts": {
     "fetch-data": "casperjs scraper.js",
     "json2csv": "node json2csv.js",
-    "fetch-data-proxy": "casperjs --proxy=127.0.0.1:1087 scraper.js"
+    "fetch-data-proxy": "casperjs --proxy=127.0.0.1:1087 scraper.js",
+    "capture": "casperjs --proxy=127.0.0.1:1087 capture.js"
   }
 }
