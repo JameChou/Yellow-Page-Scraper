@@ -7,16 +7,31 @@ class YellowPageSpider(scrapy.Spider):
     name = "yellowpage"
     allowed_domains = ["yellowpages.com"]
     base_url = "https://www.yellowpages.com"
-    area = "ca"
-    key_word = "basketball"
+    area = None
+    key_word = None
     url_suffix = "/"
-    init_url = base_url + url_suffix + area + url_suffix + key_word
+    init_url = None
     start_urls = [
-        init_url
+        base_url
     ]
     current_page = 1
-    csvfile = file(area + '.csv', 'wb')
-    writer = csv.writer(csvfile)
+    csvfile = None
+    writer = None
+
+    def __init__(self, area=None, key_word=None, *args, **kwargs):
+        super(YellowPageSpider, self).__init__(*args, **kwargs)
+        if area is not None:
+            self.area = area
+        else:
+            self.area = "ca"
+        if key_word is not None:
+            self.key_word = key_word
+        else:
+            self.key_word = "basketball"
+
+        self.init_url = self.base_url + self.url_suffix + self.area + self.url_suffix + self.key_word
+        self.csvfile = file('results/' + self.area + '.csv', 'wb')
+        self.writer = csv.writer(self.csvfile)
 
     def parse(self, response):
         yield scrapy.Request(self.init_url + '?page=' + str(self.current_page), self.parse_list_page)
