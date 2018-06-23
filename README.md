@@ -4,6 +4,10 @@ Scrap Yellow Pages for name,email,address,phone number ... and store the informa
 
 [Demo (Basketball in CA)](./results/yellowpages/ca.csv)
 
+### Install
+1. Install python3 environment. `brew insall python3 pip` - OSX
+2. Install scrapy & scrapy-splash. `pip install scrapy scrapy-splash`
+
 ### Run
 spiders:
 * yellowpages.com -> ./yellowpages/spiders/yellowpagespider.py

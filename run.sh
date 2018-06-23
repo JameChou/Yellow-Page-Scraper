@@ -24,7 +24,7 @@ echo
 
 read choose
 case "$choose" in
-"E" | "e" )
+"A" | "a" )
     echo "Begin to fetch data from yellowpages.com"
     for line in `cat state.txt`
     do
