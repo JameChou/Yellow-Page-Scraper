@@ -36,3 +36,72 @@ fetch the whole the united states
 chmod +x run.sh
 ./run.sh
 ```
+
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MATERIAL</th>
+            <th>LEVEL</th>
+            <th>SIZE(PERIMETER*WIDTH*THICKNESS)</th>
+            <th>POUND</th>
+            <th>COLOR</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="10">RESISTANCE BANDS</td>
+            <td rowspan="10">Natural Latex</td>
+            <td rowspan="5">Regular</td>
+            <td>500mm*50mm*0.5mm</td>
+            <td>10-15LB</td>
+            <td>yellow</td>
+        </tr>
+        <tr>
+            <td>500mm*50mm*0.7mm</td>
+            <td>20-35LB</td>
+            <td>red</td>
+        </tr>
+        <tr>
+            <td>500mm*50mm*0.9mm</td>
+            <td>30-45LB</td>
+            <td>blue</td>
+        </tr>
+        <tr>
+            <td>500mm*50mm*1.0mm</td>
+            <td>40-60LB</td>
+            <td>green</td>
+        </tr>
+        <tr>
+            <td>500mm*50mm*1.2mm</td>
+            <td>50-70LB</td>
+            <td>black</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Long</td>
+            <td>600mm*50mm*0.5mm</td>
+            <td>10-15LB</td>
+            <td>yellow</td>
+        </tr>
+        <tr>
+            <td>600mm*50mm*0.7mm</td>
+            <td>20-35LB</td>
+            <td>red</td>
+        </tr>
+         <tr>
+            <td>600mm*50mm*0.9mm</td>
+            <td>30-45LB</td>
+            <td>blue</td>
+        </tr>
+        <tr>
+            <td>600mm*50mm*1.0mm</td>
+            <td>40-60LB</td>
+            <td>green</td>
+        </tr>
+        <tr>
+            <td>600mm*50mm*1.2mm</td>
+            <td>50-70LB</td>
+            <td>black</td>
+        </tr>
+    </tbody>
+ </table>
