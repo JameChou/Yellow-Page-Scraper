@@ -182,3 +182,43 @@ chmod +x run.sh
         </tr>
     </tbody>
  </table>
+ 
+<table>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>DIAMETER</th>
+            <th>LENGTH</th>
+            <th>WEIGHT</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="6">UFC battle rope</td>
+            <td rowspan="3">38MM</td>
+            <td>9M</td>
+            <td>7.7KG</td>
+        </tr>
+        <tr>
+            <td>12M</td>
+            <td>10KG</td>
+        </tr>
+        <tr>
+            <td>15M</td>
+            <td>12.6</td>
+        </tr>
+        <tr>
+            <td rowspan="3">50MM</td>
+            <td>9M</td>
+            <td>13.5KG</td>
+        </tr>
+        <tr>
+            <td>9M</td>
+            <td>18KG</td>
+        </tr>
+        <tr>
+            <td>9M</td>
+            <td>22.5KG</td>
+        </tr>
+    </tbody>
+ </table>
