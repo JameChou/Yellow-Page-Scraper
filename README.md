@@ -222,3 +222,40 @@ chmod +x run.sh
         </tr>
     </tbody>
  </table>
+ 
+  <table>
+    <thead>
+        <tr>
+            <th>WEIGHT</th>
+            <th>G.W.</th>
+            <th>DIAMETER</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>860G</td>
+            <td>0.9KG</td>
+            <td>42CM</td>
+        </tr>
+        <tr>
+            <td>1000G</td>
+            <td>1.15KG</td>
+            <td>50CM</td>
+        </tr>
+        <tr>
+            <td>1200G</td>
+            <td>1.25KG</td>
+            <td>50CM</td>
+        </tr>
+        <tr>
+            <td>1300G</td>
+            <td>1.45KG</td>
+            <td>52.5CM</td>
+        </tr>
+        <tr>
+            <td>1500G</td>
+            <td>1.55KG</td>
+            <td>55CM</td>
+        </tr>
+    </tbody>
+ </table>
